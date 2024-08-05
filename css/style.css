@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #1E30D8;
+  --bs-body-bg: black;
+  --bs-body-color: white;
+}
+
+.btn-primary {
+  --bs-btn-bg: #1E30D8;
+  --bs-btn-border-color: #1E30D8;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  --bs-btn-border-color: transparent;
+  background-image: conic-gradient(
+    rgba(229, 80, 253) 10%,
+    rgba(181, 159, 121) 40%,
+    rgba(30, 48, 216) 60%,
+    rgba(229, 80, 253) 90%
+  );
+}
+
+.gradient-border {
+  border: 4px solid transparent;
+  border-radius: 6px;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), linear-gradient(90deg, rgb(30, 48, 216), rgb(181, 159, 121), rgb(229, 80, 253));
+}
+
+.gradient-border-thick {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to right, #000, #000), linear-gradient(90deg, rgb(30, 48, 216), rgb(181, 159, 121), rgb(229, 80, 253));
+}
+
+@media (max-width: 576px) {
+  html { font-size: 14px; }
+}
+@media (min-width: 1200px) {
+  html { font-size: 20px; }
+}
+@media (min-width: 768px) {
+  html { font-size: 18px; }
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.skip-links a {
+  top: -3em;
+}
+.skip-links a:focus {
+  top: 0;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  transition: 0.3s;
+}
+header.scrolled {
+  background-color: black;
+}
+
+.title {
+  transform: translateX(-50%);
+}
+
+#navigation a:hover {
+  color: var(--primary-color) !important;
+  transition: 0.3s;
+}
+
+#main {
+  min-height: calc(100vh - 120px);
+}
+
+#footer a {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header-placeholder {
+  height: 80px;
+}
+
+/* home page */
+.banner-section {
+  padding-top: 7rem;
+}
+@media (min-width: 992px) {
+  .banner-section {
+    padding-top: 10rem;
+  }
+
+  .about-section {
+    position: relative;
+  }
+  .about-section img {
+    width: 75% !important;
+  }
+  .about-section h2 {
+    position: absolute;
+    right: 6%;
+    top: 10%;
+  }
+  .about-section p {
+    width: 50% !important;
+    position: absolute;
+    right: 0;
+    top: 30%;
+  }
+
+  .services-section {
+    position: relative;
+  }
+  .services-section h2 {
+    position: absolute;
+    left: 25%;
+    top: 0;
+  }
+  .services-section .cat-banner {
+    width: 100% !important;
+  }
+}
+
+/* services page */
+@media (min-width: 992px) {
+  .services-list img {
+    height: 100% !important;
+  }
+}
