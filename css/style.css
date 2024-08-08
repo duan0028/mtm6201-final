@@ -134,3 +134,8 @@ header.scrolled {
     height: 100% !important;
   }
 }
+
+/* contact page */
+.contact-form {
+  max-width: 720px;
+}
